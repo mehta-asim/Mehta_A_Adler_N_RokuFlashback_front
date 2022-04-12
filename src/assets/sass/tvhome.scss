@@ -1,0 +1,98 @@
+.tv-home {
+    display: flex;
+    flex-direction: column;
+
+    #tv-home-title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 20px;
+        padding-left: 3vh;
+    }
+
+    .current-tv {
+        height: 33vh;
+        display: flex;
+        background-color: var(--color-6);
+        margin-bottom: 30px;
+
+        video {
+            margin: auto auto;
+            border-radius: 15px;
+            height: 28vh;
+        }
+    }
+
+    .tv-playlist {
+        margin-bottom: 30px;
+
+        #tv-playlist-title {
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 3vh;
+        }
+
+        #tv-playlist-thumbs {
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: nowrap;
+            overflow-x: scroll;
+            justify-content: flex-start;
+            align-items: center;
+            height: 30vh;
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .tv-home {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        #tv-home-title {
+            font-size: 4em;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .current-tv {
+            height: 65vh;
+            display: flex;
+            margin-bottom: 30px;
+
+
+            video {
+                margin: auto auto;
+                border-radius: 15px;
+                height: 60vh;
+            }
+        }
+
+        .tv-playlist {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+
+            #tv-playlist-title {
+                font-size: 3em;
+                font-weight: 500;
+            }
+
+            #tv-playlist-thumbs {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 60vh;
+            }
+
+
+        }
+    }
+}
