@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--color-1);
+
+
+    #app {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+
+    }
+
+
+    .ishidden {
+        display: none;
+    }
+
+    .app-wrapper {
+        header {
+            margin: 0 auto;
+
+
+            .header-image {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                img {
+                    width: 80vw;
+                }
+
+                #hamburger-icon {
+                    width: 15vw;
+                    cursor: pointer;
+                }
+            }
+
+            .navigation {
+                display: none;
+                width: 100vw;
+                height: 100vh;
+                background-color: var(--bg-color);
+                padding: 0px 30px;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+
+                li {
+                    cursor: pointer;
+                }
+
+                #site-nav {
+                    font-size: 3em;
+
+                    li {
+                        margin-bottom: 20px;
+                    }
+
+                    li:hover {
+                        transition: 0.2s ease-in;
+                        color: var(--color-5);
+                    }
+                }
+
+                #control-nav {
+                    font-size: 3em;
+
+                    li {
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 1em;
+                            border-radius: 40px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    li:hover {
+                        color: var(--color-5);
+
+                        img {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+
+            }
+
+
+
+
+        }
+
+
+
+        footer {
+            height: 20vh;
+
+            .footer-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: 0.6em;
+            }
+
+            h3 {
+                font-size: 0.5em;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        .app-wrapper {
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+
+                .header-image {
+                    img {
+                        width: 15vw;
+                    }
+
+                    #hamburger-icon {
+                        display: none;
+                    }
+                }
+
+
+                .navigation {
+                    display: none;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 80vw;
+                    height: 10vh;
+
+                    #site-nav {
+                        display: flex;
+                        font-size: 2em;
+
+                        li {
+                            margin-bottom: 0px;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    #control-nav {
+                        display: flex;
+
+                        li {
+                            margin-bottom: 0px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+
+            footer {
+                height: 30vh;
+
+                .footer-nav {
+                    font-size: 1.2em;
+                }
+
+                h3 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

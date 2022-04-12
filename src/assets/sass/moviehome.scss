@@ -1,0 +1,105 @@
+.movie-home {
+    display: flex;
+    flex-direction: column;
+
+
+
+    #movie-home-title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 20px;
+        padding-left: 3vh;
+    }
+
+    .current-movie {
+        height: 33vh;
+        display: flex;
+        background-color: var(--color-6);
+        margin-bottom: 30px;
+
+
+        video {
+            margin: auto auto;
+            border-radius: 15px;
+            height: 28vh;
+        }
+    }
+
+    .movie-playlist {
+        margin-bottom: 30px;
+
+        #movie-playlist-title {
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 3vh;
+        }
+
+        #movie-playlist-thumbs {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            justify-content: flex-start;
+            align-items: center;
+            height: 30vh;
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .movie-home {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+
+
+        #movie-home-title {
+            font-size: 4em;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .current-movie {
+            height: 65vh;
+            display: flex;
+            background-color: var(--color-6);
+            margin-bottom: 30px;
+
+
+            video {
+                margin: auto auto;
+                border-radius: 15px;
+                height: 60vh;
+            }
+        }
+
+        .movie-playlist {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+
+            #movie-playlist-title {
+                font-size: 3em;
+                font-weight: 500;
+            }
+
+            #movie-playlist-thumbs {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                // flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                height: 60vh;
+            }
+
+
+        }
+    }
+
+}

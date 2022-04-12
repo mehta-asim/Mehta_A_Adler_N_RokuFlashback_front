@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    padding-top: 40px;
+
+    .show-status {
+        margin-bottom: 20px;
+        width: 80vw;
+        font-size: 1.2em;
+        font-style: italic;
+        color: var(--color-2);
+    }
+
+    .log-in {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 30px;
+
+        label {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 50vw;
+            height: 5vh;
+            border-radius: 13px;
+            border: 1px solid var(--color-1);
+            color: var(--bg-color);
+        }
+
+        label:nth-child(3) {
+            margin-top: 20px;
+        }
+
+
+    }
+
+    button {
+        padding: 10px 0px;
+        border-radius: 13px;
+        width: 50vw;
+        border: none;
+        color: var(--color-4);
+        background-color: var(--color-1);
+        font-weight: bold;
+        font-size: 1em;
+    }
+
+    button:hover {
+        transition: 0.3s ease-in-out;
+        color: var(--color-1);
+        background-color: var(--bg-color);
+        border: 1px solid var(--color-1);
+    }
+
+    .sign-up {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 0.7em;
+    }
+
+    p:hover {
+        transition: 0.2s ease-in-out;
+        font-style: italic;
+        border-bottom: 1px solid var(--color-1);
+    }
+
+
+}
+
+@media screen and (min-width: 1080px) {
+    .container {
+        height: 70vh;
+        margin-bottom: 80px;
+
+        .show-status {
+            font-size: 2em;
+        }
+
+        .log-in {
+
+            label {
+                font-size: 2.2em;
+            }
+
+            input {
+                width: 15vw;
+            }
+
+
+
+        }
+
+        button {
+            max-width: 10vw;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+            margin-top: 20px;
+        }
+    }
+}

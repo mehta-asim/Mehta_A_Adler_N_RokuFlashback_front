@@ -1,0 +1,71 @@
+.music-home {
+    display: flex;
+    flex-direction: column;
+
+    #music-home-title {
+        font-size: 3em;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 20px;
+        padding-left: 3vh;
+    }
+
+    .current-music {
+        height: 33vh;
+        display: flex;
+        background-color: var(--color-6);
+        margin-bottom: 30px;
+
+        audio {
+            margin: auto auto;
+            border-radius: 15px;
+        }
+    }
+
+    .music-playlist {
+        margin-bottom: 30px;
+
+        #music-playlist-title {
+            text-align: left;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 3vh;
+        }
+
+        #music-playlist-thumbs {
+            display: flex;
+            flex-direction: row;
+            // flex-wrap: nowrap;
+            overflow-x: scroll;
+            justify-content: flex-start;
+            align-items: center;
+            height: 30vh;
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .music-home {
+        #music-home-title {
+            font-size: 4em;
+        }
+
+        .current-music {
+            height: 20vh;
+        }
+
+        .music-playlist {
+            margin-bottom: 30px;
+
+            #music-playlist-title {
+                font-size: 3em;
+            }
+
+            #music-playlist-thumbs {
+                height: 50vh;
+            }
+        }
+    }
+}
