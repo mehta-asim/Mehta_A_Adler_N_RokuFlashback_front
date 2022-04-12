@@ -121,7 +121,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Asim Mehta<br>
-Emre Usun<br>
-Parminder Kumar<br>
+Natasha Adler<br>
 Project Link: [https://github.com/mehta-asim/Mehta_A_Adler_N_RokuFlashback_front](https://github.com/mehta-asim/Mehta_A_Adler_N_RokuFlashback_front) <br>
-©asimmehta | emreusun | parminder kumar | 2022
+©asimmehta | natashaadler | 2022
